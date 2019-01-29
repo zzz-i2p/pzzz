@@ -1,6 +1,6 @@
 /.env/
 /__pycache__/
-Terminal.py
+
 script.sh
 main.py.bak
 core.py.bak
