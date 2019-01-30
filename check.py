@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-* Checkbox question example
-* run example by typing `python example/checkbox.py` in your console
+* Пример вопрос чекбокс 
+* пример выполнения, вводя `python example/checkbox.py` в консоли
 """
 from __future__ import print_function, unicode_literals
 
@@ -19,7 +19,7 @@ questions = [
         'message': 'Select toppings',
         'name': 'toppings',
         'choices': [ 
-            Separator('= The Meats ='),
+            Separator('= Мясо ='),
             {
                 'name': 'Ham'
             },
@@ -29,20 +29,20 @@ questions = [
             {
                 'name': 'Bacon'
             },
-            Separator('= The Cheeses ='),
+            Separator('= Сыры ='),
             {
-                'name': 'Mozzarella',
+                'name': 'Моцарелла',
                 'checked': True
             },
             {
-                'name': 'Cheddar'
+                'name': 'Чеддер'
             },
             {
-                'name': 'Parmesan'
+                'name': 'Пармезан'
             },
-            Separator('= The usual ='),
+            Separator('= Обычная ='),
             {
-                'name': 'Mushroom'
+                'name': 'Гриб'
             },
             {
                 'name': 'Tomato'
@@ -62,7 +62,7 @@ questions = [
                 'name': 'Extra cheese'
             }
         ],
-        'validate': lambda answer: 'You must choose at least one topping.' \
+        'validate': lambda answer: 'Вы должны выбрать по крайней мере один топпинг.' \
             if len(answer) == 0 else True
     }
 ]
